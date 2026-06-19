@@ -1,98 +1,49 @@
-# Personal Portfolio Website
+# Styled Personal Portfolio Website
 
 ## Project Overview
+This project is an upgraded version of the Week 1 HTML5 personal portfolio, now incorporating CSS3 for a complete styling overhaul. Developed for the Web Development Internship Week 2 submission, this project focuses on responsive design, custom color schemes, typography, and professional layouts using Flexbox.
 
-This project is a simple Personal Portfolio Website developed using HTML5 as part of the Web Development Internship Week 1 assignment.
+## Features Added (Week 2)
+- **External CSS**: Fully separated styling through an external `style.css` file.
+- **Custom Color Scheme**: Professional palette featuring Primary (#2563eb), Secondary (#1e293b), Accent (#f59e0b), Background (#f8fafc), and Text (#1f2937) colors.
+- **Improved Typography**: Integrated Google Fonts (`Inter`) for a modern, clean look.
+- **Flexbox Layouts**: Utilized Flexbox for the navigation bar, about section, skills wrap, and project cards to create a scalable and aligned layout.
+- **Hover & Focus Effects**: Added smooth transitions on navigation links, skill badges, project cards, and form inputs.
+- **Responsive Design**: Implemented media queries to ensure the layout adapts beautifully to mobile devices (max-width: 768px).
 
-The website introduces basic HTML concepts such as webpage structure, semantic elements, internal navigation links, images, lists, and forms. The project is created using only HTML5 without CSS or JavaScript.
-
----
-
-## Objectives
-
-* Learn the fundamentals of HTML5.
-* Understand webpage structure and semantic tags.
-* Create a multi-section webpage.
-* Implement internal navigation links.
-* Display images and lists.
-* Create a basic contact form.
-
----
-
-## Features
-
-* Header with personal information
-* Navigation menu with internal links
-* About Me section
-* Skills section
-* Profile image
-* Contact form
-* Semantic HTML5 structure
-* Accessible form fields with labels
-
----
-
-## Technologies Used
-
-* HTML5
-* Visual Studio Code
-* Google Chrome
-
----
+## CSS Concepts Demonstrated
+- **Selectors**: Extensively used Element, Class, and ID selectors.
+- **Box Model**: Proper use of `margin`, `padding`, and borders.
+- **Layout**: CSS Flexbox for dynamic and responsive component alignment.
+- **Effects**: `border-radius` for rounded corners, `box-shadow` for depth, and `transition` for smooth animations.
+- **Responsiveness**: `@media` queries for stacked layouts on mobile screens.
 
 ## Folder Structure
-
 ```text
 PortfolioWebsite/
 │
 ├── index.html
+├── style.css
 ├── README.md
 │
-└── images/
-    └── profile.jpg
+├── images/
+│   └── profile.jpg
+│
+└── screenshots/
 ```
 
----
-
 ## Setup Instructions
+1. Clone or download this repository.
+2. Ensure that you maintain the folder structure as shown above.
+3. Open the `index.html` file in any modern web browser. 
+4. The HTML will automatically link to `style.css` and render the styled portfolio.
 
-1. Download or clone the repository.
-2. Open the project folder in Visual Studio Code.
-3. Open the `index.html` file.
-4. Run the file using Live Server or open it directly in a web browser.
-
----
-
-## Technical Requirements Completed
-
-* [x] HTML5 document structure
-* [x] Semantic HTML tags (`header`, `nav`, `main`, `section`, `footer`)
-* [x] About section
-* [x] Skills section
-* [x] Contact section
-* [x] Internal navigation links
-* [x] Profile image with alt text
-* [x] Contact form with required fields
-* [x] Proper heading hierarchy
-* [x] Clean and readable code structure
-
----
+## Technologies Used
+- HTML5 (Semantic Structure)
+- CSS3 (Styling, Flexbox, Media Queries, Transitions)
+- Google Fonts
 
 ## Author Information
-
-**Name:** Nitish Kumar Das
-
-**Role:** B.Tech Student at IIT Jodhpur
-
-**Interests:**
-
-* Artificial Intelligence
-* Internet of Things (IoT)
-* Embedded Systems
-* Web Development
-
----
-
-## Conclusion
-
-This project helped me understand the basics of HTML5 and webpage structure. Through this assignment, I learned how to create a simple portfolio website using semantic HTML elements, navigation links, images, and forms.
+**Name:** Nitish Kumar  
+**Role:** B.Tech Student at IIT Jodhpur  
+**Interests:** Artificial Intelligence, Embedded Systems, Internet of Things, Web Development
