@@ -193,4 +193,57 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // 5. TYPEWRITER EFFECT (Extra Polish Feature 1)
+    const typewriterEl = document.getElementById("typewriter");
+    if (typewriterEl) {
+        const words = ["AI Enthusiast", "Web Developer", "IoT Innovator", "Problem Solver"];
+        let wordIdx = 0;
+        let charIdx = 0;
+        let isDeleting = false;
+
+        const typeEffect = () => {
+            const currentWord = words[wordIdx];
+            if (isDeleting) {
+                typewriterEl.textContent = currentWord.substring(0, charIdx - 1);
+                charIdx--;
+            } else {
+                typewriterEl.textContent = currentWord.substring(0, charIdx + 1);
+                charIdx++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 150;
+
+            if (!isDeleting && charIdx === currentWord.length) {
+                typeSpeed = 1500; // Pause when word is completely typed
+                isDeleting = true;
+            } else if (isDeleting && charIdx === 0) {
+                isDeleting = false;
+                wordIdx = (wordIdx + 1) % words.length;
+                typeSpeed = 500; // Pause before typing next word
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        };
+        typeEffect();
+    }
+
+    // 6. BACK TO TOP BUTTON (Extra Polish Feature 2)
+    const backToTopBtn = document.getElementById("back-to-top");
+    if (backToTopBtn) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = "flex";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        });
+
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
 });

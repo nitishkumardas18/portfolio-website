@@ -1,7 +1,7 @@
 # Interactive Personal Portfolio Website - Week 3
 
 ## Project Overview
-This project is the Week 3 final iteration of the Personal Portfolio Website developed during the Web Development Internship. Building upon the HTML5 foundation (Week 1) and CSS3 styles (Week 2), this version introduces dynamic client-side interactivity using vanilla JavaScript (`script.js`). The objective is to enhance the user experience (UX) through real-time feedback, personalized states, and responsive actions without relying on external libraries or frameworks.
+This project is the Week 3 final iteration of the Personal Portfolio Website developed during the Web Development Internship. Building upon the HTML5 foundation (Week 1) and CSS3 styles (Week 2), this version introduces dynamic client-side interactivity using vanilla JavaScript (`script.js`). The objective is to enhance the user experience (UX) through real-time feedback, personalized states, and responsive actions without relying on external libraries or frameworks. This iteration has been customized for Nitish Kumar Das.
 
 ---
 
@@ -52,6 +52,14 @@ The website integrates four major interactive elements that demonstrate advanced
 - **Error Feedback:** Displays specific error messages under the respective fields and outlines text borders in red.
 - **Real-Time Auditing:** Validates inputs dynamically (on the `input` event) so validation indicators disappear instantly when corrections are made.
 
+### 5. Typewriter Effect
+- **Description:** An animated, self-typing role displayer in the hero header.
+- **Implementation:** Cycles through multiple technical roles dynamically, typing and deleting characters with blinking cursor animations.
+
+### 6. Back-to-Top Navigation Button
+- **Description:** Floating button in the bottom right corner of the page.
+- **Implementation:** Appears only when scrolling down past 300px, enabling the user to smoothly scroll back to the header with a single click.
+
 ---
 
 ## ⚙️ Technical Details & Validation Logic
@@ -95,3 +103,10 @@ The application was tested against various user actions to ensure robust error h
 2. Ensure the structure maps to the hierarchy in the *Code Structure* section.
 3. Open `index.html` in any web browser.
 4. Open the Developer Tools console (`F12`) to verify the message `"JavaScript Loaded and Ready!"` is logged upon page load.
+
+---
+
+## 👩‍💻 Author Information
+**Name:** Nitish Kumar Das  
+**Role:** B.Tech Student at IIT Jodhpur  
+**Interests:** Artificial Intelligence, Embedded Systems, Internet of Things, Web Development
