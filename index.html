@@ -30,6 +30,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙 Dark Mode</button></li>
             </ul>
         </div>
     </nav>
@@ -44,7 +45,11 @@
                 </div>
                 <div class="about-text card">
                     <p>Hello! I am Nitish Kumar, a B.Tech Student at IIT Jodhpur.</p>
-                    <p>I have a keen interest in Artificial Intelligence, Internet of Things (IoT), Embedded Systems, and Web Development. I am passionate about technology and software development, always eager to learn and build innovative solutions.</p>
+                    <p>I have a keen interest in Artificial Intelligence, Internet of Things (IoT), Embedded Systems, and Web Development.</p>
+                    <div id="more-about" class="hidden">
+                        <p>I am passionate about technology and software development, always eager to learn and build innovative solutions. I enjoy working on hands-on hardware-software integration projects and building modern web applications.</p>
+                    </div>
+                    <button id="read-more-btn" class="read-more-btn">Read More</button>
                 </div>
             </div>
         </section>
@@ -87,20 +92,24 @@
         <section id="contact" class="section">
             <h2 class="section-title">Contact</h2>
             <div class="contact-container card">
-                <form action="#" method="post" class="contact-form">
+                <form action="#" method="post" class="contact-form" novalidate>
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="nameError"></span>
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
                     </div>
                     <div class="form-group">
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="messageError"></span>
                     </div>
                     <button type="submit" class="submit-btn">Submit</button>
+                    <div id="formSuccess" class="success-message"></div>
                 </form>
             </div>
         </section>
@@ -113,5 +122,7 @@
         </div>
     </footer>
 
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
